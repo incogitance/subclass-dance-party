@@ -35,21 +35,55 @@ body, a:link, a:visited, a:active{
   border-color: rgb(9, 54, 12);
   border-radius:10px;
   position:absolute;
+  animation-name: example2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-.cohortHead{
+span.cohortHead{
   background-image: url("./assets/heads/head01.png");
   background-repeat: no-repeat;
-  position: absolute;
-  height: 100px;
-  width: 50px;
-  z-index:9;
+  background-size: 100%;
+  background-position-x: center;
+  position:absolute;
+  width: 80px;
+  height: 120px;
+  z-index:12;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-play-state: running;
+  animation-timing-function: ease;
 }
 .cohortDancer{
   background-image: url("./assets/bodies/dancer01.gif");
   background-repeat: no-repeat;
   background-size: 175px, 248px;
   position:absolute;
-  height:248px;
-  width:175px;
+  height:260px;
+  width:170px;
   z-index:10;
+
+}
+
+@keyframes example {
+
+}
+@keyframes rotate {
+  0%  {transform: rotate(-30deg);}
+  10% {transform: rotate(30deg);}
+  20% {transform: rotate(-30deg);}
+  30% {transform: rotate(30deg);}
+  40% {transform: rotate(-30deg);}
+  50% {transform: rotate(30deg);}
+  100% {transform: rotate(-30deg);}
+}
+
+@keyframes example2 {
+  0%   {border-color: red; left:0px; top:0px;}
+  50%  {border-color: green; left:200px; top:200px;}
+  75%  {border-color: yellow; left:200px; top:0px;}
+  100% {border-color: red; left:0px; top:0px;}
+  25%  {border-color: blue; left:0px; top:200px;}
 }

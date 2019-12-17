@@ -5,6 +5,7 @@ var makeDancer = function (top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
+
   this.step();
   this.setPosition(top, left);
   this.randomColor();
