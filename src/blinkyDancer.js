@@ -22,15 +22,14 @@ makeBlinkyDancer.prototype.step = function () {
 };
 
 
-var makeGBlinkyDancer = function (top, left, timeBetweenSteps) {
+var rgbBlinkyDancer = function (top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer2"></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
-
 };
 
-makeGBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+rgbBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 //makeGBlinkyDancer.prototype.$node = $('<span class="dancer2"></span>');
-makeGBlinkyDancer.prototype.step = function () {
+rgbBlinkyDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
   this.$node.toggle();
 };

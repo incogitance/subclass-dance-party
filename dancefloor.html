@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Object Dance Party</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="lib/jquery.js"></script>
-    <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
-    <script src="src/cohortDancer.js"></script>
-    <script src="assets/scripts/giphy.js"></script>
-  </head>
-  <body>
-    <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeGBlinkyDancer">Green blinky dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="cohortDancer">Cohort dancer</a>
-    </div>
-    <script src="src/init.js"></script>
-  </body>
+
+<head>
+  <title>Object Dance Party</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="lib/jquery.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/blinkyDancer.js"></script>
+  <script src="src/cohortDancer.js"></script>
+  <script src="assets/scripts/giphy.js"></script>
+  <script src="assets/scripts/screens.js"></script>
+
+</head>
+
+<body>
+  <div class="topbar">
+    <span class="title">HRR43 object dance party</span>
+    <!-- <button href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky
+      dancer</button> -->
+    <button href="#" class="addDancerButton" data-dancer-maker-function-name="rgbBlinkyDancer">RGB blinky
+      dancer</button>
+    <button href="#" class="addDancerButton" data-dancer-maker-function-name="cohortDancer">Cohort dancer</button>
+  </div>
+  <script src="src/init.js"></script>
+  <span class="screen1" style="background-image: url(&quot;./assets/screens/screen01.png&quot;);"></span>
+  <span class="screen2" style="background-image: url(&quot;./assets/screens/screen02.png&quot;);"></span>
+  <span class="screenC1" style="background-image: url(&quot;./assets/screens/max1.gif&quot;);"></span>
+  <span class="screenC2" style="background-image: url(&quot;./assets/screens/max2.gif&quot;);"></span>
+</body>
+
 </html>

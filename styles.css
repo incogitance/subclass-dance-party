@@ -7,12 +7,84 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:rgba(53, 48, 48, 0.719);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.addDancerButton {border-radius: 12px;}
+
+p.disco{
+  color:black;
+
+  width:420px;
+  height:250px;
+
+  font-family: 'Oswald', sans-serif;
+  font-size:3em;
+  line-height:1;
+  margin:0;
+  padding:0;
+
+  -webkit-transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
+  transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
+
+  position:absolute;
+  left:50%;
+  top:50px;
+  margin-left:-180px;
+
+  -webkit-animation: anim 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count:infinite;
+
+  animation: anim 3s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes anim {
+    0%{text-shadow:-6px 4px 0px red;}
+    10% {text-shadow:4px -6px 0px green;}
+    20% {text-shadow:-9px 4px 0px blue;}
+    30% {text-shadow:4px -6px 0px yellow;}
+    40% {text-shadow:-8px 4px 0px orange;}
+    50% {text-shadow:4px 5px 0px purple;}
+    60% {text-shadow:-6px 4px 0px brown;}
+    70% {text-shadow:4px 7px 0px pink;}
+    80% {text-shadow:-9px -4px 0px lime;}
+    90% {text-shadow:4px -6px 0px cyan;}
+    100% {text-shadow:-9px 4px 0px teal;}
+}
+
+@keyframes anim {
+    0%{text-shadow:-6px 4px 0px red;}
+    10% {text-shadow:4px -6px 0px green;}
+    20% {text-shadow:-9px 4px 0px blue;}
+    30% {text-shadow:4px -6px 0px yellow;}
+    40% {text-shadow:-8px 4px 0px orange;}
+    50% {text-shadow:4px 5px 0px purple;}
+    60% {text-shadow:-6px 4px 0px brown;}
+    70% {text-shadow:4px 7px 0px pink;}
+    80% {text-shadow:-9px -4px 0px lime;}
+    90% {text-shadow:4px -6px 0px cyan;}
+    100% {text-shadow:-9px 4px 0px teal;}
+}
+
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -24,6 +96,48 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
+.screen1{
+  transform: skewX(2deg);
+  position: absolute;
+  background-size: cover;
+  height: 146px;
+  width: 208px;
+  top: 207px;
+  left: 24px;
+  border-radius: 25px;
+}
+.screen2{
+  transform: skewX(-3deg);
+  position: absolute;
+  background-size: cover;
+  height: 144px;
+  width: 200px;
+  top: 212px;
+  left: 839px;
+  border-radius: 30px;
+}
+.screenC1{
+  transform: skewX(5deg);
+    position: absolute;
+    background-size: cover;
+    height: 44px;
+    width: 70px;
+    top: 258px;
+    left: 314px;
+}
+
+.screenC2{
+  transform: skewX(-3deg);
+    position: absolute;
+    background-size: cover;
+    height: 44px;
+    width: 70px;
+    top: 258px;
+    left: 692px;
+}
+
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
@@ -31,10 +145,10 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer2{
-  border:10px solid green;
+  border: 10px solid green;
   border-color: rgb(9, 54, 12);
-  border-radius:10px;
-  position:absolute;
+  border-radius: 10px;
+  position: absolute;
   animation-name: example2;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -44,10 +158,10 @@ span.cohortHead{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: center;
-  position:absolute;
+  position: absolute;
   width: 80px;
   height: 120px;
-  z-index:12;
+  z-index: 1;
   animation-name: rotate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -60,10 +174,10 @@ span.cohortHead{
   background-image: url("./assets/bodies/dancer01.gif");
   background-repeat: no-repeat;
   background-size: 175px, 248px;
-  position:absolute;
-  height:260px;
-  width:170px;
-  z-index:10;
+  position: absolute;
+  height: 280px;
+  width: 170px;
+  z-index: 1;
 
 }
 
